@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* ! Reuseable Code ***********/
+section,
+article,
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  font-size: 2rem;
+  color: white;
+}
+.blog-post h2,
+.hero-container h2 {
+  color: black;
+}
+
+/* ! Discription ***********/
+.discription {
+    width: 100%;
+    background-color: #3d3d3d;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+}
+
+/* ! Header ******************/
+header {
+  height: 7rem;
+  background-color: #ff3961;
+}
+
+/* ! Main *******************/
+main {
+  min-height: calc(100vh - 7rem - 5rem);
+  width: 100%;
+  padding: 2rem;
+}
+
+/* ? Hero Container */
+.hero-container {
+  border-radius: 3rem;
+  width: 100%;
+  height: 30rem;
+  background-color: yellow;
+  margin-bottom: 2rem;
+}
+
+/* ? Flex Container */
+.flex-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+/* ? Blog Container */
+.blog-container {
+  width: 75%;
+  border-radius: 2rem;
+  background-color: rgb(179, 0, 255);
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* ? Blog Post */
+.blog-post {
+  width: 85%;
+  height: 30rem;
+  margin: 2rem;
+  border-radius: 1.6rem;
+  background-color: rgb(172, 255, 255);
+}
+
+/* ? Sidebar */
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5112;
+  border-radius: 2rem;
+  margin: 2rem 0 2rem 2rem;
+  height: 100rem;
+  width: 25%;
+}
+
+/* ! Footer ******************/
+footer {
+  height: 5rem;
+  background-color: #1a1a1a;
+}
+
+/* ! Responsive Code */
+        /* ? (700px) */
+@media (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+  .blog-container,
+  .sidebar {
+    height: 60rem;
+  }
+  .blog-container {
+    width: 67%;
+  }
+  .sidebar {
+    width: 33%;
+  }
+}
+        /* ? (530px) */
+@media (max-width: 530px) {
+  html {
+    font-size: 40%;
+  }
+  .blog-container,
+  .sidebar {
+    height: 50rem;
+  }
+  .hero-container {
+    height: 20rem;
+  }
+}
+        /* ? (400px) */
+@media (max-width: 400px) {
+  html {
+    font-size: 35%;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .blog-container,
+  .sidebar {
+    width: 100%;
+    height: 80rem;
+  }
+  .sidebar {
+    margin: 2rem;
+  }
+  .hero-container {
+    height: 30rem;
+  }
+}
